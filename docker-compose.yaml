@@ -1,11 +1,11 @@
 version: "3.8"
 services:
   invidious:
-    image: quay.io/invidious/invidious:${TAG}
+    image: quay.io/invidious/invidious:${TAG:-latest-arm64}
     restart: always
     stop_grace_period: 3s
     ports:
-      - 127.0.0.1:81:3000
+      - 127.0.0.1:${PORT:-81}:3000
     environment:
       INVIDIOUS_CONFIG: |
         db:
