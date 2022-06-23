@@ -28,7 +28,7 @@ services:
       - postgres
 
   postgres:
-    image: postgres:13
+    image: postgres:14
     restart: always
     # purposefully excluded volumes section
     # the database will reset on recreate
