@@ -19,6 +19,7 @@ services:
         login_enabled: false
         statistics_enabled: false
         hsts: false
+        domain: ${INSTANCE_ID}.watchtube.app
     healthcheck:
       test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
       interval: 30s
