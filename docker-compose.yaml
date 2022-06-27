@@ -20,6 +20,7 @@ services:
         statistics_enabled: false
         hsts: false
         https_only: true
+        external_port: 443
         domain: ${INSTANCE_ID}.watchtube.app
     healthcheck:
       test: wget -nv --tries=1 --spider http://127.0.0.1:3000/api/v1/comments/jNQXAC9IVRw || exit 1
