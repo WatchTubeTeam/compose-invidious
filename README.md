@@ -70,7 +70,7 @@ explanation of each setting:
 
 - `TAG`: the version of Invidious to use. Use `latest` for amd64/x86_64
   machines, and `latest-arm64` for arm64 machines. This defaults to
-  `latest-amd64` since the majority of our servers run on Oracle Cloud Ampere.
+  `latest-arm64` since the majority of our servers run on Oracle Cloud Ampere.
 - `INSTANCE_ID`: the first part of the domain, for example: the `uk1` in
   `uk1.watchtube.app`. **This setting is REQUIRED**
 - `PORT`: the port that Invidious should run on. This port is only accessible
